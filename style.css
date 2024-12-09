@@ -362,6 +362,24 @@ svg {
 	height: 30px;
 }
 
+#linkedIn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#github:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#linkedIn:active{
+    opacity: 0.5;
+}
+
+#github:active{
+    opacity: 0.5;
+}
+
 /* Footer styles */
 footer {
 	/*background-color: var(--secondary-color);*/
