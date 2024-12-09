@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Geist+Mono:wght@100..900&family=League+Spartan:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+
+
+:root {
+	--primary-color: #3498db;
+	--secondary-color: #2c3e50;
+	--text-color: #333;
+	--bg-color: #f4f4f4;
+	--card-bg: #ffffff;
+	--spacing-sm: 1rem;
+	--spacing-md: 2rem;
+	--spacing-lg: 4rem;
+	--border-radius: 8px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #08817B;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #967860;
+    border-radius: 6px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: "League Spartan", serif;
+}
+
+
+#backtotop{
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.fa-map-marker-alt{
+    font-size: 9px;
+    font-family: "League Spartan", serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    /*border: 1px solid white;*/
+    max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links li{
+    list-style: none;
+}
+
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    /*transition: color 0.5s ease;*/
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+
+}
+
+.nav-links li a{
+    padding: 12px;
+}
+
+.nav-links li a:hover{
+    /*background-color: rgb(126, 123,123);*/
+    /*background-color: #333;*/
+    /*border-radius: 8px;*/
+    /*transition: color 1s ease, background-color 1s ease;*/
+    transition: 0.3s ease-in-out;
+    color: #08817B;
+    border-bottom: 4px solid #08817B;
+}
+
+.nav-links li a:active{
+    opacity: 0.5;
+}
+/*
+span{
+    color: #198d87;
+}
+    */
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Main content styles */
+main {
+	padding: var(--spacing-lg) 0;
+}
+
+section {
+	margin-bottom: var(--spacing-lg);
+}
+
+.containers{
+    max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--spacing-sm);
+    color: white;
+    /*border: 1px solid white;*/
+}
+
+h2 {
+	margin-bottom: var(--spacing-sm);
+}
+
+header {
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(image/3b1318af97da781e28a3fa9fee4c0857.jpeg);
+    background-size: cover;
+    /*background-position: center;*/
+    background-position: top 30% left 10%;
+	color: white;
+	padding: var(--spacing-md) 0;
+	text-align: center;
+}
+
+hr {
+    border-color: grey;
+    margin-top: 15px;
+}
+
+.homeclass{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    /*max-height: 200px;*/
+}
+.homeclass div{
+    /*border: 1px solid white;*/
+    width: 45%;
+    padding:10px;
+}
+.divimage{
+    /*border: 1px solid purple;*/
+    display: flex;
+    justify-content: space-around;
+}
+.divimage img{
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 5px;
+    /*width: 200px;*/
+}
+.introtext{
+    padding: 15px;
+    /*flex-grow: 1;*/
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    max-width: 550px;
+    min-width: 250px;
+    /*border: 2px solid red;*/
+}
+
+#projects h2{
+    margin-top: 10px;
+}
+/* Card styles for projects */
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--spacing-md);
+}
+
+.project-card h3{
+    margin-bottom: 15px;
+}
+.project-card p{
+    line-height: 28px; 
+    letter-spacing: 1px;
+}
+.project-card {
+	background-color: #333;
+	border-radius: var(--border-radius);
+	padding: var(--spacing-md);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.2s ease;
+}
+
+.project-card h3, .project-card p {
+    color: white;
+}
+
+.project-card:hover{
+    box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.2), /* top-left shadow */ 0 -4px 8px rgba(255, 255, 255, 0.2), /* top shadow */ -4px 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.experience-grid{
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    /*border: 1px solid violet;*/
+    width: 80%;
+    margin: 2px auto;
+}
+
+
+.experience-grid div{
+	border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Set a fixed height for the divs */  
+    width: 90%; /* Make the box smaller in width */
+    margin: auto; /* Center the box inside the grid item */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    transition: 0.2s ease-in-out;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.experience-grid p{
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.experience-grid div:hover p{
+    color: white;
+}
+
+
+.experience-grid div:hover{
+    /*background-color: #333;*/
+    /*box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(255, 255, 255, 0.19);*/
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), /* bottom shadow */ 0 -4px 8px rgba(255, 255, 255, 0.2), /* top shadow */ 4px 0 8px rgba(255, 255, 255, 0.2), /* right shadow */ -4px 0 8px rgba(255, 255, 255, 0.2), /* left shadow */ 4px 4px 8px rgba(255, 255, 255, 0.2), /* bottom-right shadow */ -4px -4px 8px rgba(255, 255, 255, 0.2), /* top-left shadow */ -4px 4px 8px rgba(255, 255, 255, 0.2), /* bottom-left shadow */ 4px -4px 8px rgba(255, 255, 255, 0.2); /* top-right shadow */
+    transition: 0.2s ease-in-out;
+}
+
+
+.experience-grid div svg {
+    width: 80%; /* Adjust the width of the SVG */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 65%; /* Ensure SVGs fit within the divs */
+}
+
+#contact h2{
+    margin-top: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+/*Nav Bar*/
+@media (max-width: 500px){
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        align-items: center;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .experience-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust min-width for smaller screens */
+    }
+
+    .homeclass {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        /* max-height: 200px; */
+    }
+
+    .hide2{
+        display: none;
+    }
+
+    .hide{
+        display: block;
+        width: 80%;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    .introtext{
+        width: 100% !important;
+    }
+}
+
+
+/* Adjust for small screens (e.g., mobile) */
+@media (max-width: 760px) {
+    .experience-grid {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+      grid-template-rows: repeat(8, 1fr); /* 8 rows on small screens */
+    }
+
+  }
+
+@media (min-width: 590px) and (max-width: 750px) {
+    .experience-grid{
+        display: grid !important;
+        /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        gap: var(--spacing-md) !important;
+        /*border: 1px solid violet;*/
+        width: 80% !important;
+        margin: 2px auto !important;
+    }
+}
+
+/* SVG Styles */
+.social-links {
+	margin-top: 13px;
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+svg {
+	width: 30px;
+	height: 30px;
+}
+
+/* Footer styles */
+footer {
+	/*background-color: var(--secondary-color);*/
+	color: white;
+	text-align: center;
+	/*padding: var(--spacing-md) 0;*/
+	margin-top: var(--spacing-lg);
+}
+button{
+    max-width: 200px;
+    background-color: #333;
+    border-radius: 8px;
+    border: none;
+    /*height: 30px;*/
+    margin: 6px auto;
+    display: block;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 15px;
+    font-family: Edu VIC WA NT Beginner;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #08817B;
+}
+
+button:active{
+    opacity: 0.5;
+}
+
+.svg{
+    position: relative;
+}
+.imagetext{
+    position: absolute;
+}
+
+.imagetext p{
+    display: none;
+}
+
