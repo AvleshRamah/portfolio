@@ -292,6 +292,10 @@ hr {
     .nav-links {
         align-items: center;
     }
+
+    #about p{
+	text-align: justify;
+    }
 }
 
 /* Media query for smaller screens */
