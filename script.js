@@ -9,7 +9,7 @@ linkedInIcon.addEventListener('click', ()=>{
     }
 })
 
-githubIconIcon.addEventListener('click', ()=>{
+githubIcon.addEventListener('click', ()=>{
     const userConfirmed = confirm("Do you want to go to my Github Profile?");
 
     if (userConfirmed){
