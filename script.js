@@ -19,7 +19,7 @@ githubIcon.addEventListener('click', ()=>{
 //animation
 var typed = new Typed(".auto-type", {
     strings : ["Programmer", "Web Designer", "Web Developer"],
-    typeSpeed : 150,
-    backSpeed : 150,
+    typeSpeed : 110,
+    backSpeed : 110,
     loop : true
 });
