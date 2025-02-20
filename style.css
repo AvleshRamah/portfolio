@@ -431,3 +431,6 @@ button:active{
     display: none;
 }
 
+.auto-type{
+    color: #32CD32;
+}
