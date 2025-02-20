@@ -16,3 +16,10 @@ githubIcon.addEventListener('click', ()=>{
         window.open('https://github.com/AvleshRamah', '_blank');
     }
 })
+//animation
+var typed = new Typed(".auto-type", {
+    strings : ["Programmer", "Web Designer", "Web Developer"],
+    typeSpeed : 150,
+    backSpeed : 150,
+    loop : true
+});
