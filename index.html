@@ -21,6 +21,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
     <nav id="backtotop">
@@ -308,7 +312,7 @@
       <br />
       <hr />
       <br />
-      <section id="projects">
+      <section id="projects" data-aos="fade-up" data-aos-duration="500">
         <h2>My <span>Projects</span></h2>
         <br />
         <p style="line-height: 28px; letter-spacing: 1px">
@@ -316,7 +320,7 @@
           worked on. For more of my work, check out my GitHub profile.
         </p>
         <br /><br />
-        <div class="project-grid">
+        <div class="project-grid" data-aos="fade-right" data-aos-duration="500">
           <article class="project-card">
             <h3>E-commerce Platform (In Progress)</h3>
             <p>
@@ -354,10 +358,11 @@
       </section>
       <hr />
       <br />
-      <section id="contact">
+      <section id="contact" data-aos="fade-up" data-aos-duration="500">
         <h2>Let's Connect</h2>
         <br />
-        <p style="line-height: 28px; letter-spacing: 1px">
+        <p style="line-height: 28px; letter-spacing: 1px" data-aos="fade-right"
+          data-aos-duration="500">
           I'm eager to share my work with you and would love to hear your
           thoughts, suggestions, or any potential opportunities for
           collaboration. Whether you're a student, a potential employer,
@@ -411,6 +416,10 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js" defer></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
